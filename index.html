@@ -72,7 +72,7 @@
                      <div class="row">
                         <div class="col-md-6">
                            <div class="container">
-                              <h1 class="banner_taital">Get Medical Care early</h1>
+                              <h1 class="banner_taital">$(hostname -f)</h1>
                               <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                               <div class="more_bt"><a href="#">Read More</a></div>
                            </div>
@@ -86,7 +86,7 @@
                      <div class="row">
                         <div class="col-md-6">
                            <div class="container">
-                              <h1 class="banner_taital">Get Medical Care early</h1>
+                              <h1 id="hostname" class="banner_taital"> hostname </h1>
                               <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                               <div class="more_bt"><a href="#">Read More</a></div>
                            </div>
@@ -310,6 +310,10 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
+      <script>
+            const hostname = window.location.hostname;
+            document.getElementById("hostname").innerHTML +=  ${hostname};
+      </script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
